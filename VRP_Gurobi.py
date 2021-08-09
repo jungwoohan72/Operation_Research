@@ -35,6 +35,9 @@ mdl.addConstrs(u[i]<=Q for i in N);
 mdl.optimize()
 
 active_arcs = [a for a in A if x[a].x > 0.99]
+print(active_arcs)
+print(u)
+
 
 plt.figure()
 for i,j in active_arcs:
