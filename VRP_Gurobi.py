@@ -6,7 +6,7 @@ from gurobipy import Model, GRB, quicksum
 rnd = np.random
 rnd.seed(4)
 
-n = 10 # number of clients
+n = 20 # number of clients
 
 # 200 by 100 box
 xc = rnd.rand(n+1)*200 # x-coordinates (1 extra for the depot)
